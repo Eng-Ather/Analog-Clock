@@ -1,49 +1,60 @@
 var hours = document.getElementById("hours_handel");
 var minnut = document.getElementById("minnut_handel");
 var second = document.getElementById("second_handel");
-var date ;
+var date;
 
+function datee() {
+  date = new Date(); // j.s bydefault method for new date and time
+  //console.log(date);
+  var h = date.getHours(); // getinh hour
+  var m = date.getMinutes(); // getting minute
+  var s = date.getSeconds(); // getting second
 
-function datee()
-{
+  //----------------- for hours ------------------------------------------------------
 
- date = new Date(); // j.s bydefault method for new date and time
-//console.log(date);
+  if (h > 12) {
+    h = h % 12; // convertinh 24hours into 12 hours patreen
+    h = h * 30; // converting into degree (radian vale)
+    hours.style.transform = `rotate(${h}deg)`;
+  } else if (h <= 12 && m <= 14) {
+    // h = h + 0.2;
+    h = h * 30;
+    hours.style.transform = `rotate(${h}deg)`;
+    console.log(h);
+  } else if (h <= 12 && m <= 30) {
+    h = h + 0.4;
+    h = h * 30;
+    hours.style.transform = `rotate(${h}deg)`;
+    console.log(h);
+  } else if (h <= 12 && m <= 40) {
+    h = h + 0.6;
+    h = h * 30;
+    hours.style.transform = `rotate(${h}deg)`;
+    console.log(h);
+  } else if (h <= 12 && m <= 47) {
+    h = h + 0.8;
+    h = h * 30;
+    hours.style.transform = `rotate(${h}deg)`;
+    console.log(h);
+  } else if (h <= 12 && m <= 60) {
+    h++;
+    h = h * 30;
+    hours.style.transform = `rotate(${h}deg)`;
+    console.log(h);
+  }
 
-//----------------- for hours ------------------------------------------------------
-var h = date.getHours(); // getinh hour 
-console.log(h);
+  //------------------------------- for minute --------------------------------------
 
-if (h > 12)
- {
-  h = h % 12; // convertinh 24hours into 12 hours patreen
-  console.log(h);
-  h = h * 30; // converting into degree (radian vale)
-  console.log(h);
+  m = m * 6;
+  console.log(m);
+  minnut.style.transform = `rotate(${m}deg)`;
+
+  //------------------------------- for second ----------------------------------------
+
+  console.log(s);
+  s = s * 6;
+  second.style.transform = `rotate(${s}deg)`;
 }
-hours.style.transform = `rotate(${h}deg)`;
-
-
-
-//------------------------------- for minute --------------------------------------
-var m = date.getMinutes();
-console.log(m);
-m=m*6;
-console.log(m);
-minnut.style.transform = `rotate(${m}deg)`;
-
-
-
-//------------------------------- for second ----------------------------------------
-var s = date.getSeconds();
-console.log(s);
-s=s*6;
-second.style.transform = `rotate(${s}deg)`;
-}
-
 
 // --------------------------- for interval ------------------------------------------
-setInterval( datee,1000)
-
-
-
+setInterval(datee, 1000);

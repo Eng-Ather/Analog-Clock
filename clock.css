@@ -18,7 +18,8 @@ body {
 .side_wall {
     width: 280px;
     height: 280px;
-    border-radius: 20px;
+    border-radius: 150px;
+    box-shadow: 10px 2px 15px rgb(26, 0, 128);
     border: 5px solid rgb(26, 0, 128);
     /* background-color: aquamarine; */
     background-image: linear-gradient(to bottom, rgb(46, 82, 244), rgb(92, 212, 228));
@@ -29,12 +30,14 @@ body {
 
 .main {
     color: green;
+    text-align: center;
     width: 250px;
     height: 250px;
-    border-radius: 20px;
+    border-radius: 120px;
     background-color: rgb(26, 54, 65);
     margin: auto;
     padding: 10px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -32,35 +32,74 @@ function myFunction() {
 
   if (h > 12) {
     h = h % 12; // convertinh 24hours into 12 hours patreen
-    h = h * 30; // converting into degree (radian vale)
-    hours.style.transform = `rotate(${h}deg)`;
-  } else if (h <= 12 && m <= 14) {
-    // h = h + 0.2;
-    h = h * 30;
+   // h = h * 30; // converting into degree (radian vale)
+    //hours.style.transform = `rotate(${h}deg)`;
+  
+   if (h > 12 && m <= 14) {
+        h = h * 30;
+        hours.style.transform = `rotate(${h}deg)`;}
+
+
+    if (m <= 30) {
+      h = h + 0.4;
+      h = h * 30;
+      hours.style.transform = `rotate(${h}deg)`;
+      console.log(h);
+    }
+
+    else if ( m <= 40) {
+      h = h + 0.6;
+      h = h * 30;
+      hours.style.transform = `rotate(${h}deg)`;
+      console.log(h);
+    }
+
+    else if (m <= 47) {
+      h = h + 0.8;
+      h = h * 30;
+      hours.style.transform = `rotate(${h}deg)`;
+      console.log(h);
+    } 
+    
+    else if ( m <= 60) {
+      h++;
+      h = h * 30;
+      hours.style.transform = `rotate(${h}deg)`;
+      console.log(h);
+    }
+  }
+////////////////////////////////////////////////////////////////
+
+    else if (h <= 12 && m <= 14) {
     hours.style.transform = `rotate(${h}deg)`;
     console.log(h);
-  } else if (h <= 12 && m <= 30) {
+  } 
+  
+  else if (h <= 12 && m <= 30) {
     h = h + 0.4;
     h = h * 30;
     hours.style.transform = `rotate(${h}deg)`;
     console.log(h);
-  } else if (h <= 12 && m <= 40) {
+  } 
+  else if (h <= 12 && m <= 40) {
     h = h + 0.6;
     h = h * 30;
     hours.style.transform = `rotate(${h}deg)`;
     console.log(h);
-  } else if (h <= 12 && m <= 47) {
+  } 
+  else if (h <= 12 && m <= 47) {
     h = h + 0.8;
     h = h * 30;
     hours.style.transform = `rotate(${h}deg)`;
     console.log(h);
-  } else if (h <= 12 && m <= 60) {
+  } 
+  else if (h <= 12 && m <= 60) {
     h++;
     h = h * 30;
     hours.style.transform = `rotate(${h}deg)`;
     console.log(h);
   }
-
+  
   //------------------------------- for minute --------------------------------------
 
   m = m * 6;

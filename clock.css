@@ -150,5 +150,8 @@ body {
         width: 450px;
        height: 100vh ; 
     }
+
+    .side_wall {
+        width: 300px;}
 }
 

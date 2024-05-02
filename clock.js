@@ -12,6 +12,7 @@ function myFunction() {
   var s = date.getSeconds(); // getting second
   var d = date.getDate();
   var month = date.getMonth();
+  // console.log(month);
   var year = date.getFullYear()
   var day = date.getDay();
 
@@ -23,7 +24,7 @@ function myFunction() {
   if(day==5){ day = "Friday"}
   if(day==0){ day = "Saturday"}
 
-  today.innerText =`it's ${day} \n ${d} - ${month} - ${year}`
+  today.innerText =`it's ${day} \n ${d} - ${month+1} - ${year}`
 
  
 

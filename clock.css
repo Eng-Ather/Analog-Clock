@@ -142,16 +142,11 @@ body {
          text-shadow: 1px 2px rgb(119, 35, 35);
          padding-bottom: 30px;
          text-align: end;
-         width: 430px;
+         width: 290px;
     }
 
-    body {
-      
-        width: 450px;
-       height: 100vh ; 
-    }
+    .side_wall {width: 290px;}
 
-    .side_wall {
-        width: 300px;}
+    h1{ font-size: 20px;}
 }
 

@@ -74,11 +74,5 @@ function myFunction() {
   second.style.transform = `rotate(${s}deg)`;
 }
 
-
-//-------------------------------- for ate -------------------------------------------
-
-
-
-
 // --------------------------- for interval ------------------------------------------
 setInterval(myFunction, 1000);

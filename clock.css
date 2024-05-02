@@ -5,8 +5,8 @@
 }
 
 body {
-/* border: 2px solid black; */
-/* width: 100%; */
+    /* border: 2px solid black; */
+    /* width: 100%; */
     height: 100vh;
     background-image: linear-gradient(to top, rgba(26, 54, 65, 0.7), green);
     display: flex;
@@ -15,27 +15,34 @@ body {
     flex-direction: column;
     /* background-color: rgba(26, 54, 65, 0.7); */
 }
-#today_date{
+
+
+p {
+    color: rgb(185, 232, 185);
+    text-shadow: 1px 2px rgb(183, 146, 51);
+    font-size: 50px;
+}
+
+#today_date {
     font-size: 40px;
     text-decoration: underline;
-    color:rgb(185, 232, 185);
-     text-shadow: 1px 2px rgb(119, 35, 35);
-     padding-bottom: 30px;
-     text-align: end;
-     /* border: 2px solid black; */
-     width: 800px;
+    color: rgb(185, 232, 185);
+    text-shadow: 1px 2px rgb(119, 35, 35);
+    padding-bottom: 30px;
+    text-align: end;
+    /* border: 2px solid black; */
+    width: 800px;
 }
 
 .side_wall {
     width: 450px;
     height: 280px;
-    /* border-radius: 150px; */
-    box-shadow: 10px 10px 15px  rgb(239, 109, 28);
+    box-shadow: 10px 10px 15px rgb(239, 109, 28);
     border: 5px solid rgb(119, 35, 35);
-    /* background-color: aquamarine; */
+    border-radius: 50px 0px 100px 0px;
     background-image: linear-gradient(to bottom, rgb(46, 82, 244), rgb(92, 212, 228));
     margin: auto;
-    padding: 10px;
+    padding-top: 15px;
     position: relative;
 }
 
@@ -48,6 +55,7 @@ body {
     background-color: rgb(26, 54, 65);
     box-shadow: 0px 10px 15px rgb(239, 109, 28);
     margin: auto;
+    margin-top: 20px;
     padding: 10px;
     padding-top: 100px;
     display: flex;
@@ -100,7 +108,7 @@ body {
     top: 21%;
     /* transform: rotate(30deg); */
     transform-origin: bottom;
- 
+
 
 }
 
@@ -135,19 +143,28 @@ body {
 
 @media(min-width:10px) and (max-width:350px) {
 
-    #today_date{
-        font-size: 40px;
+    #today_date {
+        font-size: 30px;
+        /* border: 2px solid black; */
         text-decoration: underline;
-        color:rgb(185, 232, 185);
-         text-shadow: 1px 2px rgb(119, 35, 35);
-         padding-bottom: 30px;
-         text-align: end;
-         width: 290px;
-         display: none;
+        color: rgb(185, 232, 185);
+        text-shadow: 1px 2px rgb(119, 35, 35);
+        padding-bottom: 180px;
+        text-align: end;
+        width: 250px;
+
     }
 
-    .side_wall {width: 290px;}
+    .side_wall {
+        width: 270px;
+        height: 250px;
+        border: 2px solid rgb(119, 35, 35);
+        border-radius: 50px 0px 60px 0px;
+    }
 
-    h1{ font-size: 10px;}
+    p {
+        color: rgb(185, 232, 185);
+        text-shadow: 1px 2px rgb(183, 146, 51);
+        font-size: 30px;
+    }
 }
-

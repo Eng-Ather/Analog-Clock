@@ -1,14 +1,31 @@
 var hours = document.getElementById("hours_handel");
 var minnut = document.getElementById("minnut_handel");
 var second = document.getElementById("second_handel");
+var today = document.getElementById("today_date")
 var date;
 
-function datee() {
+function myFunction() {
   date = new Date(); // j.s bydefault method for new date and time
   //console.log(date);
   var h = date.getHours(); // getinh hour
   var m = date.getMinutes(); // getting minute
   var s = date.getSeconds(); // getting second
+  var d = date.getDate();
+  var month = date.getMonth();
+  var year = date.getFullYear()
+  var day = date.getDay();
+
+  if(day==0){ day = "Saturday"}
+  if(day==1){ day = "Monday"}
+  if(day==2){ day = "Tuesday"}
+  if(day==3){ day = "Wednesday"}
+  if(day==4){ day = "Thrusday"}
+  if(day==5){ day = "Friday"}
+  if(day==0){ day = "Saturday"}
+
+  today.innerText =`it's ${day} \n ${d} - ${month} - ${year}`
+
+ 
 
   //----------------- for hours ------------------------------------------------------
 
@@ -56,5 +73,11 @@ function datee() {
   second.style.transform = `rotate(${s}deg)`;
 }
 
+
+//-------------------------------- for ate -------------------------------------------
+
+
+
+
 // --------------------------- for interval ------------------------------------------
-setInterval(datee, 1000);
+setInterval(myFunction, 1000);
